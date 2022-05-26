@@ -1,0 +1,247 @@
+
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.contain{
+    width: 90%;
+    padding: 20px;
+    margin: 100px auto;
+    background: #ddd;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box{
+    width: 250px;
+margin: 0px 10px;
+transition: 1s;
+
+}
+.box img{
+    width: fit-content;
+    height: 100%;
+}
+.box:hover{
+    transform: scale(1.3);
+    z-index: 2;
+    box-shadow: 2px 2px 2px #000;
+    
+}
+.textline {
+    text-align: center;
+    font-size: 40px;
+  }
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Koulen&family=Lobster&family=Macondo&family=Slabo+27px&family=Source+Serif+Pro&display=swap');
+
+
+/* 
+font-family: 'Abril Fatface', cursive;
+font-family: 'Koulen', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Macondo', cursive;
+font-family: 'Slabo 27px', serif;
+font-family: 'Source Serif Pro', serif; */
+.container {
+    width: 450px;
+    margin: 50px auto;
+    min-height: 200px;
+    padding: 50px;
+    text-align: center;
+    position: relative;
+}
+.fieldRow {
+    position: relative;
+    display: inline-block;
+    width: 400px;
+    margin: 10px 0;
+}
+  .col2 {
+    width: 210px;
+    float: left;
+  }
+  .last {
+    float: right;
+  }
+ 
+    input:focus {
+      outline: none;
+        border-color: #4aa9f2;
+        box-shadow: 0px 0px 2px 3px #edf2f6;
+        background-color: #FFF;
+    }
+  .booking-form{
+    background-color: #1f1e1e;
+  }
+  body{
+    background-color: #fffff;
+  }
+  .neon{
+    font-family: 'Macondo', cursive;
+    color:rgb(168, 161, 168);
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    text-shadow:0 0 10px #f24acb,
+    0 0 10px #a71885,
+    0 0 10px #a71885;
+  }
+/*   
+   .music_notes1{
+    z-index: 1;
+    top: 18rem;
+    animation: animate 2s infinite ;
+
+   }
+   @keyframes animate{
+0%{
+  transform: translateX(3rem)scale(0.2);
+
+}
+80%{
+opacity: 0.5;
+}
+100%{
+  opacity: 0;
+}
+   }
+   @keyframes animate2{
+    0%{
+      transform: translateX(-3rem)scale(0.2);
+    
+    }
+    80%{
+    opacity: 0.5;
+    }
+    100%{
+      opacity: 0;
+    }
+       }
+
+   .music_notes2{
+    z-index: 1;
+    top: 18rem;
+    right: 12rem;
+  transform: scaleX(-1);
+    animation: animate2 2s infinite ;
+
+   } */
+ .left-guitar{
+  transform: rotate(-20deg);
+  z-index: 0;
+ }
+ .right-guitar{
+  transform: rotate(20deg);
+  z-index: 0;
+
+ }
+ .hide {
+  visibility: hidden;
+}
+
+.modalpop {
+  position: fixed;
+  top: 2rem;
+  left: 0;
+  width: 50vw;
+  height: 90vh;
+  background-color:rgb(10, 9, 9);
+  display: flex ;
+  
+  justify-content: center;
+  align-items: center;
+  color: rgb(24, 22, 22);
+
+}
+.modalpop2 {
+  position: fixed;
+  top: 2rem;
+  left: 0;
+  width: 50vw;
+  height: 90vh;
+  background-color:rgb(13, 12, 12);
+  display: flex ;
+  
+  justify-content: center;
+  align-items: center;
+  color: rgb(219, 210, 210);
+
+}
+
+button.closingbutton {
+  position: absolute;
+  right: -1em;
+  top: -1em;
+  border-radius: 50%;
+  width: 2em;
+  height: 2em;
+  background-color: black;
+  color: red;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 10px 15px;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
